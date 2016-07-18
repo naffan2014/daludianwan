@@ -36,8 +36,8 @@
 													
 	<div class="form-group">
 				<label for="game_style" class="col-sm-2 control-label form-control-static">游戏风格</label>
-				<div class="col-sm-9 ">
-					<input type="text" name="game_style"  id="game_style"  value='<?php echo isset($data_info['game_style'])?$data_info['game_style']:'' ?>'  class="form-control validate[required]"  placeholder="请输入游戏风格" >
+				<div class="col-md-5 ">
+					<input class="form-control" value="<?php echo isset($data_info['game_style_text'])?$data_info['game_style_text']:''; ?>" readonly="readonly" placeholder="请点击选择" type="text" id="game_style_text"  /><input type="hidden" value="<?php echo isset($data_info['game_style'])?$data_info['game_style']:'';?>" id="game_style" name="game_style" />
 				</div>
 			</div>
 													

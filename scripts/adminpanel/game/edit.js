@@ -1,3 +1,15 @@
+	function  chooseWindowGame_style(inputId,w,h,iscallback){
+		if(!w) w=screen.width-4;
+		if(!h) h=screen.height-95;
+		if(!iscallback)iscallback=0;
+		var window_url = SITE_URL+'adminpanel/type/db_style_list_window/';
+		$.extDialogFrame(window_url+inputId,{model:true,width:w,height:h,title:'请选择...',buttons:null});
+	}
+	function getGame_style(v,t){
+		$("#game_style").val(v);
+		$("#game_style_text").val(t);
+		$("#dialog" ).dialog();$("#dialog" ).dialog("close");
+	}
 	function  chooseWindowGame_merchant(inputId,w,h,iscallback){
 		if(!w) w=screen.width-4;
 		if(!h) h=screen.height-95;
@@ -44,6 +56,9 @@
 
 	$(".datepicker").datepicker();
 
+$("#game_style_text").click(function(){
+chooseWindowGame_style('game_style',800,550,1,2)
+})
 $("#game_merchant_text").click(function(){
 chooseWindowGame_merchant('game_merchant',800,550,1,2)
 })
