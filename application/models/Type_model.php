@@ -50,6 +50,28 @@ PRIMARY KEY (`type_id`)
 ");
     }
     
+        
+    /**
+     * 风格列表     * @return array
+     */
+    function DB_style_list_datasource($where='',$limit = '', $order = '', $group = '', $key='')
+    {
+    	$datalist = $this->select($where,'type_id,type_name',$limit,$order,$group,$key);
+        return $datalist;
+    }
+    
+    /**
+     * 风格列表选择中项值     * @return array
+     */
+    function DB_style_list_value($id=0)
+    {
+    	$data_info = $this->get_one(array('type_id'=>$id),'type_name');
+        if($data_info)
+        {
+        	return  implode("-",$data_info);
+        }
+        return NULL;
+    }
         }
 
 // END type_model class

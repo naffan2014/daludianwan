@@ -52,6 +52,28 @@ PRIMARY KEY (`merchant_id`)
 ");
     }
     
+        
+    /**
+     * 厂商列表     * @return array
+     */
+    function DB_merchant_list_datasource($where='',$limit = '', $order = '', $group = '', $key='')
+    {
+    	$datalist = $this->select($where,'merchant_id,merchant_name,merchant_url',$limit,$order,$group,$key);
+        return $datalist;
+    }
+    
+    /**
+     * 厂商列表选择中项值     * @return array
+     */
+    function DB_merchant_list_value($id=0)
+    {
+    	$data_info = $this->get_one(array('merchant_id'=>$id),'merchant_name');
+        if($data_info)
+        {
+        	return  implode("-",$data_info);
+        }
+        return NULL;
+    }
         }
 
 // END merchant_model class

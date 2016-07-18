@@ -184,6 +184,32 @@ class Type extends Admin_Controller {
         $this->view('readonly',array('require_js'=>true,'data_info'=>$data_info));
     }
 
+    /**
+     *      * @return array
+     */
+    function DB_style_list_window($controlId='',$page_no=0)
+    {
+    	$page_no = max(intval($page_no),1);
+        $orderby = 'type_ID desc';
+        $keyword=safe_replace(trim($this->input->get('keyword')));
+
+		$where ="";
+		if (isset($_GET['dosubmit'])) {
+			if($keyword!="") $where = "concat(type_id,type_name) like '%{$keyword}%'";
+		}
+		
+        
+    	$data_list = $this->type_model->listinfo($where,'type_id,type_name',$orderby , $page_no, $this->type_model->page_size,'',$this->type_model->page_size,page_list_url('adminpanel/type/DB_style_list_window',true));
+        if($data_list)
+        {
+            	foreach($data_list as $k=>$v)
+            	{
+    
+    			}
+        }
+    	$this->view('choose',array('require_js'=>true,'hidden_menu'=>true,'fields_convert'=>explode(",",'type_name'),'fields'=>explode(",",'type_id,type_name'),'fields_caption'=>explode(",",'ID,风格名称'),'data_list'=>$data_list,'pages'=>$this->type_model->pages,'control_id'=>$controlId,'keyword'=>$keyword,'concat_char'=>''));
+      
+    }
 }
 
 // END type class

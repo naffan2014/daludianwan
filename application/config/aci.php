@@ -463,6 +463,115 @@ $config['aci_module'] = array (
         'menu_name' => '上传',
         'caption' => '上传',
       ),
+      9 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'DB_merchant_list_window',
+        'menu_name' => '厂商列表',
+        'caption' => '厂商列表',
+      ),
+    ),
+  ),
+  'game' => 
+  array (
+    'version' => '1',
+    'charset' => 'utf-8',
+    'lastUpdate' => '2016-07-18 19:54:00',
+    'moduleName' => 'game',
+    'modulePath' => 'adminpanel',
+    'moduleCaption' => '游戏管理',
+    'description' => '由autoCodeigniter 自动生成的模块',
+    'fileList' => 
+    array (
+      0 => 'application/views/adminpanel/game/edit.php',
+      1 => 'scripts/adminpanel/game/edit.js',
+      2 => 'application/views/adminpanel/game/readonly.php',
+      3 => 'application/views/adminpanel/game/lists.php',
+      4 => 'scripts/adminpanel/game/lists.js',
+      5 => 'application/views/adminpanel/game/choose.php',
+      6 => 'application/controllers/adminpanel/Game.php',
+      7 => 'application/models/Game_model.php',
+    ),
+    'works' => true,
+    'moduleUrl' => 'adminpanel/game',
+    'system' => false,
+    'coder' => '胡子锅',
+    'website' => 'http://',
+    'moduleDetails' => 
+    array (
+      0 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'index',
+        'menu_name' => '管理游戏管理',
+        'caption' => '管理游戏管理',
+      ),
+      1 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'index',
+        'menu_name' => '游戏管理列表',
+        'caption' => '游戏管理列表',
+      ),
+      2 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'add',
+        'menu_name' => '新增',
+        'caption' => '新增',
+      ),
+      3 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'edit',
+        'menu_name' => '修改',
+        'caption' => '修改',
+      ),
+      4 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'choose',
+        'menu_name' => '选择弹窗',
+        'caption' => '选择弹窗',
+      ),
+      5 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'delete_one',
+        'menu_name' => '删除单个',
+        'caption' => '删除单个',
+      ),
+      6 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'delete_all',
+        'menu_name' => '删除多个',
+        'caption' => '删除多个',
+      ),
+      7 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'readonly',
+        'menu_name' => '查看',
+        'caption' => '查看',
+      ),
+      8 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'game',
+        'method' => 'upload',
+        'menu_name' => '上传',
+        'caption' => '上传',
+      ),
     ),
   ),
   'type' => 
@@ -563,6 +672,14 @@ $config['aci_module'] = array (
         'method' => 'upload',
         'menu_name' => '上传',
         'caption' => '上传',
+      ),
+      9 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'type',
+        'method' => 'DB_style_list_window',
+        'menu_name' => '风格列表',
+        'caption' => '风格列表',
       ),
     ),
   ),

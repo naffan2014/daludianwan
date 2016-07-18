@@ -192,6 +192,32 @@ class Merchant extends Admin_Controller {
         $this->view('readonly',array('require_js'=>true,'data_info'=>$data_info));
     }
 
+    /**
+     *      * @return array
+     */
+    function DB_merchant_list_window($controlId='',$page_no=0)
+    {
+    	$page_no = max(intval($page_no),1);
+        $orderby = 'merchant_ID desc';
+        $keyword=safe_replace(trim($this->input->get('keyword')));
+
+		$where ="";
+		if (isset($_GET['dosubmit'])) {
+			if($keyword!="") $where = "concat(merchant_id,merchant_name,merchant_url) like '%{$keyword}%'";
+		}
+		
+        
+    	$data_list = $this->merchant_model->listinfo($where,'merchant_id,merchant_name,merchant_url',$orderby , $page_no, $this->merchant_model->page_size,'',$this->merchant_model->page_size,page_list_url('adminpanel/merchant/DB_merchant_list_window',true));
+        if($data_list)
+        {
+            	foreach($data_list as $k=>$v)
+            	{
+    
+    			}
+        }
+    	$this->view('choose',array('require_js'=>true,'hidden_menu'=>true,'fields_convert'=>explode(",",'merchant_name'),'fields'=>explode(",",'merchant_id,merchant_name,merchant_url'),'fields_caption'=>explode(",",'ID,厂商名称,厂商官网'),'data_list'=>$data_list,'pages'=>$this->merchant_model->pages,'control_id'=>$controlId,'keyword'=>$keyword,'concat_char'=>''));
+      
+    }
 }
 
 // END merchant class
