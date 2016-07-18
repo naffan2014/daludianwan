@@ -199,20 +199,20 @@ $config['aci_module'] = array (
         'method' => 'delete_one',
         'caption' => '用户组管理-删除',
       ),
-      12 =>
-          array (
-              'folder' => 'adminpanel',
-              'controller' => 'user',
-              'method' => 'user_window',
-              'caption' => '用户-弹窗',
-          ),
-      13 =>
-          array (
-              'folder' => 'adminpanel',
-              'controller' => 'role',
-              'method' => 'group_window',
-              'caption' => '用户组-弹窗',
-          ),
+      12 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'user',
+        'method' => 'user_window',
+        'caption' => '用户-弹窗',
+      ),
+      13 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'role',
+        'method' => 'group_window',
+        'caption' => '用户组-弹窗',
+      ),
     ),
   ),
   'moduleMenu' => 
@@ -361,6 +361,107 @@ $config['aci_module'] = array (
         'method' => 'index',
         'menu_name' => NULL,
         'caption' => NULL,
+      ),
+    ),
+  ),
+  'merchant' => 
+  array (
+    'version' => '1',
+    'charset' => 'utf-8',
+    'lastUpdate' => '2016-07-18 18:03:23',
+    'moduleName' => 'merchant',
+    'modulePath' => 'adminpanel',
+    'moduleCaption' => '厂商管理',
+    'description' => '由autoCodeigniter 自动生成的模块',
+    'fileList' => 
+    array (
+      0 => 'application/views/adminpanel/merchant/edit.php',
+      1 => 'scripts/adminpanel/merchant/edit.js',
+      2 => 'application/views/adminpanel/merchant/readonly.php',
+      3 => 'application/views/adminpanel/merchant/lists.php',
+      4 => 'scripts/adminpanel/merchant/lists.js',
+      5 => 'application/views/adminpanel/merchant/choose.php',
+      6 => 'application/controllers/adminpanel/Merchant.php',
+      7 => 'application/models/Merchant_model.php',
+    ),
+    'works' => true,
+    'moduleUrl' => 'adminpanel/merchant',
+    'system' => false,
+    'coder' => '胡子锅',
+    'website' => 'http://',
+    'moduleDetails' => 
+    array (
+      0 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'index',
+        'menu_name' => '管理厂商管理',
+        'caption' => '管理厂商管理',
+      ),
+      1 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'index',
+        'menu_name' => '厂商管理列表',
+        'caption' => '厂商管理列表',
+      ),
+      2 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'add',
+        'menu_name' => '新增',
+        'caption' => '新增',
+      ),
+      3 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'edit',
+        'menu_name' => '修改',
+        'caption' => '修改',
+      ),
+      4 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'choose',
+        'menu_name' => '选择弹窗',
+        'caption' => '选择弹窗',
+      ),
+      5 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'delete_one',
+        'menu_name' => '删除单个',
+        'caption' => '删除单个',
+      ),
+      6 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'delete_all',
+        'menu_name' => '删除多个',
+        'caption' => '删除多个',
+      ),
+      7 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'readonly',
+        'menu_name' => '查看',
+        'caption' => '查看',
+      ),
+      8 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'merchant',
+        'method' => 'upload',
+        'menu_name' => '上传',
+        'caption' => '上传',
       ),
     ),
   ),
