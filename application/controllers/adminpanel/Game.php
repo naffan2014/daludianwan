@@ -30,7 +30,6 @@ class Game extends Admin_Controller {
 										'game_sale_time'=>'game_sale_time',
 										'game_arrival_time'=>'game_arrival_time',
 										'game_record_time'=>'game_record_time',
-										'game_status'=>'game_status',
 										);
 	}
     

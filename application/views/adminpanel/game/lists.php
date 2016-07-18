@@ -78,12 +78,6 @@
               <?php } elseif (($order=='game_record_time'&&$dir=='asc')) { ?>
               <?php $css="sorting_asc";?>
               <?php } ?><th class="sorting <?php echo $css;?>"   onclick="window.location.href='<?php echo $next_url;?>'"   nowrap="nowrap">游戏录入时间</th>
-                            <?php $css=""; $next_url = base_url('adminpanel/game?order=game_status&dir=desc'); ?>
-              <?php if(($order=='game_status'&&$dir=='desc')) { ?>
-              <?php $css="sorting_desc";$next_url = base_url('adminpanel/game?order=game_status&dir=asc'); ?>
-              <?php } elseif (($order=='game_status'&&$dir=='asc')) { ?>
-              <?php $css="sorting_asc";?>
-              <?php } ?><th class="sorting <?php echo $css;?>"   onclick="window.location.href='<?php echo $next_url;?>'"   nowrap="nowrap">游戏状态</th>
               <th>操作</th>
             </tr>
           </thead>
@@ -99,7 +93,6 @@
                             <td><?php echo $v['game_sale_time']?></td>
                             <td><?php echo $v['game_arrival_time']?></td>
                             <td><?php echo $v['game_record_time']?></td>
-                            <td><?php echo $v['game_status']?></td>
               <td>
                             	<a href="<?php echo base_url('adminpanel/game/readonly/'.$v['game_id'])?>"  class="btn btn-default btn-xs"><span class="glyphicon glyphicon-share-alt"></span> 查看</a>
                                             <a href="<?php echo base_url('adminpanel/game/edit/'.$v['game_id'])?>"  class="btn btn-default btn-xs"><span class="glyphicon glyphicon-edit"></span> 修改</a>
