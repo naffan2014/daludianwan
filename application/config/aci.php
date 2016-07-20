@@ -555,33 +555,6 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'helloWorld' => 
-  array (
-    'version' => '1',
-    'charset' => 'utf-8',
-    'lastUpdate' => '2015-10-09 20:10:10',
-    'moduleName' => 'helloWorld',
-    'modulePath' => 'adminpanel',
-    'moduleCaption' => 'Hello World',
-    'description' => '这里一个演示模块，来自于吸心大法第三章',
-    'fileList' => NULL,
-    'works' => true,
-    'moduleUrl' => 'adminpanel/helloWorld',
-    'system' => false,
-    'coder' => '胡子锅',
-    'website' => 'http://',
-    'moduleDetails' => 
-    array (
-      0 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'helloWorld',
-        'method' => 'index',
-        'menu_name' => NULL,
-        'caption' => NULL,
-      ),
-    ),
-  ),
   'game' => 
   array (
     'version' => '1',
@@ -898,6 +871,33 @@ $config['aci_module'] = array (
         'method' => 'upload',
         'menu_name' => '上传',
         'caption' => '上传',
+      ),
+    ),
+  ),
+  'helloWorld' => 
+  array (
+    'version' => '1',
+    'charset' => 'utf-8',
+    'lastUpdate' => '2015-10-09 20:10:10',
+    'moduleName' => 'helloWorld',
+    'modulePath' => 'adminpanel',
+    'moduleCaption' => 'Hello World',
+    'description' => '这里一个演示模块，来自于吸心大法第三章',
+    'fileList' => NULL,
+    'works' => true,
+    'moduleUrl' => 'adminpanel/helloWorld',
+    'system' => false,
+    'coder' => '胡子锅',
+    'website' => 'http://',
+    'moduleDetails' => 
+    array (
+      0 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'helloWorld',
+        'method' => 'index',
+        'menu_name' => NULL,
+        'caption' => NULL,
       ),
     ),
   ),

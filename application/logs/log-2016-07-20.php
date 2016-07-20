@@ -76,3 +76,4 @@ ERROR - 2016-07-20 15:54:05 --> Severity: Warning --> chmod(): Operation not per
 ERROR - 2016-07-20 16:35:18 --> Severity: Warning --> chmod(): Operation not permitted /usr/local/var/www/nginxRoot/com.project/daludianwan/system/libraries/Cache/drivers/Cache_file.php 106
 ERROR - 2016-07-20 16:35:43 --> Severity: Warning --> chmod(): Operation not permitted /usr/local/var/www/nginxRoot/com.project/daludianwan/system/libraries/Cache/drivers/Cache_file.php 106
 ERROR - 2016-07-20 16:36:51 --> Query error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'varchar(50) int(11)' at line 1 - Invalid query: alter table t_aci_record  change  record_disc  varchar(50) int(11)
+ERROR - 2016-07-20 16:40:25 --> Severity: Warning --> chmod(): Operation not permitted /usr/local/var/www/nginxRoot/com.project/daludianwan/system/libraries/Cache/drivers/Cache_file.php 106
