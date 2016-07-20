@@ -33,6 +33,7 @@ class Disc_model extends Base_Model {
 		'disc_id'=>0,
 		'disc_no'=>'',
 		'disc_game'=>'',
+		'disc_status'=>'1',
 		);
     }
     
@@ -46,12 +47,35 @@ class Disc_model extends Base_Model {
 (
 `disc_no` int(11) DEFAULT '0' COMMENT '光盘序号',
 `disc_game` varchar(50) DEFAULT NULL COMMENT '所属游戏',
+`disc_status` varchar(250) DEFAULT NULL COMMENT '光盘状态',
 `disc_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
 PRIMARY KEY (`disc_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 ");
     }
     
+        
+    /**
+     * 游戏盘列表     * @return array
+     */
+    function DB_disc_list_datasource($where='',$limit = '', $order = '', $group = '', $key='')
+    {
+    	$datalist = $this->select($where,'disc_no,disc_no,disc_game,disc_status',$limit,$order,$group,$key);
+        return $datalist;
+    }
+    
+    /**
+     * 游戏盘列表选择中项值     * @return array
+     */
+    function DB_disc_list_value($id=0)
+    {
+    	$data_info = $this->get_one(array('disc_no'=>$id),'disc_game');
+        if($data_info)
+        {
+        	return  implode("-",$data_info);
+        }
+        return NULL;
+    }
         }
 
 // END disc_model class

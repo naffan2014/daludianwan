@@ -26,6 +26,17 @@
 					<input class="form-control" value="<?php echo isset($data_info['disc_game_text'])?$data_info['disc_game_text']:''; ?>" readonly="readonly" placeholder="请点击选择" type="text" id="disc_game_text"  /><input type="hidden" value="<?php echo isset($data_info['disc_game'])?$data_info['disc_game']:'';?>" id="disc_game" name="disc_game" />
 				</div>
 			</div>
+													
+	<div class="form-group">
+				<label for="disc_status" class="col-sm-2 control-label form-control-static">光盘状态</label>
+				<div class="col-sm-9 ">
+					<select class="form-control "  name="disc_status"  id="disc_status">
+				<option value="">==请选择==</option>
+								<option value='1' <?php if(isset($data_info['disc_status'])&&($data_info['disc_status']=='1')) { ?> selected="selected" <?php } ?>            >正常</option>
+				<option value='2' <?php if(isset($data_info['disc_status'])&&($data_info['disc_status']=='2')) { ?> selected="selected" <?php } ?>            >已借</option>
+</select>
+				</div>
+			</div>
 											</fieldset>
 							<div class='form-actions'>
 				<button class='btn btn-primary ' type='submit' id="dosubmit">保存</button>

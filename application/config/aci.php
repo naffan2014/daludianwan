@@ -582,107 +582,6 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'disc' => 
-  array (
-    'version' => '1',
-    'charset' => 'utf-8',
-    'lastUpdate' => '2016-07-20 15:28:56',
-    'moduleName' => 'disc',
-    'modulePath' => 'adminpanel',
-    'moduleCaption' => '游戏盘管理',
-    'description' => '由autoCodeigniter 自动生成的模块',
-    'fileList' => 
-    array (
-      0 => 'application/views/adminpanel/disc/edit.php',
-      1 => 'scripts/adminpanel/disc/edit.js',
-      2 => 'application/views/adminpanel/disc/readonly.php',
-      3 => 'application/views/adminpanel/disc/lists.php',
-      4 => 'scripts/adminpanel/disc/lists.js',
-      5 => 'application/views/adminpanel/disc/choose.php',
-      6 => 'application/controllers/adminpanel/Disc.php',
-      7 => 'application/models/Disc_model.php',
-    ),
-    'works' => true,
-    'moduleUrl' => 'adminpanel/disc',
-    'system' => false,
-    'coder' => '胡子锅',
-    'website' => 'http://',
-    'moduleDetails' => 
-    array (
-      0 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'index',
-        'menu_name' => '管理游戏盘管理',
-        'caption' => '管理游戏盘管理',
-      ),
-      1 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'index',
-        'menu_name' => '游戏盘管理列表',
-        'caption' => '游戏盘管理列表',
-      ),
-      2 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'add',
-        'menu_name' => '新增',
-        'caption' => '新增',
-      ),
-      3 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'edit',
-        'menu_name' => '修改',
-        'caption' => '修改',
-      ),
-      4 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'choose',
-        'menu_name' => '选择弹窗',
-        'caption' => '选择弹窗',
-      ),
-      5 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'delete_one',
-        'menu_name' => '删除单个',
-        'caption' => '删除单个',
-      ),
-      6 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'delete_all',
-        'menu_name' => '删除多个',
-        'caption' => '删除多个',
-      ),
-      7 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'readonly',
-        'menu_name' => '查看',
-        'caption' => '查看',
-      ),
-      8 => 
-      array (
-        'folder' => 'adminpanel',
-        'controller' => 'disc',
-        'method' => 'upload',
-        'menu_name' => '上传',
-        'caption' => '上传',
-      ),
-    ),
-  ),
   'game' => 
   array (
     'version' => '1',
@@ -789,6 +688,216 @@ $config['aci_module'] = array (
         'method' => 'DB_game_list_window',
         'menu_name' => '游戏列表',
         'caption' => '游戏列表',
+      ),
+    ),
+  ),
+  'disc' => 
+  array (
+    'version' => '1',
+    'charset' => 'utf-8',
+    'lastUpdate' => '2016-07-20 15:28:56',
+    'moduleName' => 'disc',
+    'modulePath' => 'adminpanel',
+    'moduleCaption' => '游戏盘管理',
+    'description' => '由autoCodeigniter 自动生成的模块',
+    'fileList' => 
+    array (
+      0 => 'application/views/adminpanel/disc/edit.php',
+      1 => 'scripts/adminpanel/disc/edit.js',
+      2 => 'application/views/adminpanel/disc/readonly.php',
+      3 => 'application/views/adminpanel/disc/lists.php',
+      4 => 'scripts/adminpanel/disc/lists.js',
+      5 => 'application/views/adminpanel/disc/choose.php',
+      6 => 'application/controllers/adminpanel/Disc.php',
+      7 => 'application/models/Disc_model.php',
+    ),
+    'works' => true,
+    'moduleUrl' => 'adminpanel/disc',
+    'system' => false,
+    'coder' => '胡子锅',
+    'website' => 'http://',
+    'moduleDetails' => 
+    array (
+      0 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'index',
+        'menu_name' => '管理游戏盘管理',
+        'caption' => '管理游戏盘管理',
+      ),
+      1 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'index',
+        'menu_name' => '游戏盘管理列表',
+        'caption' => '游戏盘管理列表',
+      ),
+      2 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'add',
+        'menu_name' => '新增',
+        'caption' => '新增',
+      ),
+      3 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'edit',
+        'menu_name' => '修改',
+        'caption' => '修改',
+      ),
+      4 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'choose',
+        'menu_name' => '选择弹窗',
+        'caption' => '选择弹窗',
+      ),
+      5 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'delete_one',
+        'menu_name' => '删除单个',
+        'caption' => '删除单个',
+      ),
+      6 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'delete_all',
+        'menu_name' => '删除多个',
+        'caption' => '删除多个',
+      ),
+      7 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'readonly',
+        'menu_name' => '查看',
+        'caption' => '查看',
+      ),
+      8 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'upload',
+        'menu_name' => '上传',
+        'caption' => '上传',
+      ),
+      9 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'disc',
+        'method' => 'DB_disc_list_window',
+        'menu_name' => '游戏盘列表',
+        'caption' => '游戏盘列表',
+      ),
+    ),
+  ),
+  'record' => 
+  array (
+    'version' => '1',
+    'charset' => 'utf-8',
+    'lastUpdate' => '2016-07-20 16:26:28',
+    'moduleName' => 'record',
+    'modulePath' => 'adminpanel',
+    'moduleCaption' => '租赁管理',
+    'description' => '由autoCodeigniter 自动生成的模块',
+    'fileList' => 
+    array (
+      0 => 'application/views/adminpanel/record/edit.php',
+      1 => 'scripts/adminpanel/record/edit.js',
+      2 => 'application/views/adminpanel/record/readonly.php',
+      3 => 'application/views/adminpanel/record/lists.php',
+      4 => 'scripts/adminpanel/record/lists.js',
+      5 => 'application/views/adminpanel/record/choose.php',
+      6 => 'application/controllers/adminpanel/Record.php',
+      7 => 'application/models/Record_model.php',
+    ),
+    'works' => true,
+    'moduleUrl' => 'adminpanel/record',
+    'system' => false,
+    'coder' => '胡子锅',
+    'website' => 'http://',
+    'moduleDetails' => 
+    array (
+      0 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'index',
+        'menu_name' => '管理租赁管理',
+        'caption' => '管理租赁管理',
+      ),
+      1 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'index',
+        'menu_name' => '租赁管理列表',
+        'caption' => '租赁管理列表',
+      ),
+      2 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'add',
+        'menu_name' => '新增',
+        'caption' => '新增',
+      ),
+      3 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'edit',
+        'menu_name' => '修改',
+        'caption' => '修改',
+      ),
+      4 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'choose',
+        'menu_name' => '选择弹窗',
+        'caption' => '选择弹窗',
+      ),
+      5 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'delete_one',
+        'menu_name' => '删除单个',
+        'caption' => '删除单个',
+      ),
+      6 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'delete_all',
+        'menu_name' => '删除多个',
+        'caption' => '删除多个',
+      ),
+      7 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'readonly',
+        'menu_name' => '查看',
+        'caption' => '查看',
+      ),
+      8 => 
+      array (
+        'folder' => 'adminpanel',
+        'controller' => 'record',
+        'method' => 'upload',
+        'menu_name' => '上传',
+        'caption' => '上传',
       ),
     ),
   ),

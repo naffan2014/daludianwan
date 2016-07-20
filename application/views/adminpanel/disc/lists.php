@@ -13,9 +13,16 @@
         <div class='col-md-12'>
         <form class="form-inline" role="form" method="get">
           
-<div class="form-group">
-<label for="keywords" class="form-control-static">光盘序号:</label>
-<input class="form-control" size="3" type="number"  name="disc_no_1"  id="disc_nodisc_no1" placeholder="光盘序号大于等于范围"/> - <input class="form-control" size="3" type="number"  name="disc_no_2"  id="disc_nodisc_no2" placeholder="光盘序号小于等于范围"/></div>
+	<div class="form-group">
+				<label for="disc_status" class="col-sm-5 control-label form-control-static">光盘状态</label>
+				<div class="col-sm-7 ">
+					<select class="form-control "  name="disc_status"  id="disc_status">
+				<option value="">==不限==</option>
+								<option value='1' <?php if(isset($data_info['disc_status'])&&($data_info['disc_status']=='1')) { ?> selected="selected" <?php } ?>            >正常</option>
+				<option value='2' <?php if(isset($data_info['disc_status'])&&($data_info['disc_status']=='2')) { ?> selected="selected" <?php } ?>            >已借</option>
+</select>
+				</div>
+			</div>
 <button type="submit" name="dosubmit" value="搜索" class="btn btn-success"><i class='glyphicon glyphicon-search'></i></button>        </form>
         </div>
       </div> 
@@ -33,7 +40,13 @@
               <?php } elseif (($order=='disc_no'&&$dir=='asc')) { ?>
               <?php $css="sorting_asc";?>
               <?php } ?><th class="sorting <?php echo $css;?>"   onclick="window.location.href='<?php echo $next_url;?>'"   nowrap="nowrap">光盘序号</th>
-              <th   nowrap="nowrap">所属游戏</th>
+                            <?php $css=""; $next_url = base_url('adminpanel/disc?order=disc_game&dir=desc'); ?>
+              <?php if(($order=='disc_game'&&$dir=='desc')) { ?>
+              <?php $css="sorting_desc";$next_url = base_url('adminpanel/disc?order=disc_game&dir=asc'); ?>
+              <?php } elseif (($order=='disc_game'&&$dir=='asc')) { ?>
+              <?php $css="sorting_asc";?>
+              <?php } ?><th class="sorting <?php echo $css;?>"   onclick="window.location.href='<?php echo $next_url;?>'"   nowrap="nowrap">所属游戏</th>
+              <th   nowrap="nowrap">光盘状态</th>
               <th>操作</th>
             </tr>
           </thead>
@@ -43,6 +56,7 @@
               <td><input type="checkbox" name="pid[]" value="<?php echo $v['disc_id']?>" /></td>
                              <td><?php echo $v['disc_no']?></td>
                             <td><?php echo $v['disc_game']?></td>
+                            <td><?php echo $v['disc_status']?></td>
               <td>
                             	<a href="<?php echo base_url('adminpanel/disc/readonly/'.$v['disc_id'])?>"  class="btn btn-default btn-xs"><span class="glyphicon glyphicon-share-alt"></span> 查看</a>
                                             <a href="<?php echo base_url('adminpanel/disc/edit/'.$v['disc_id'])?>"  class="btn btn-default btn-xs"><span class="glyphicon glyphicon-edit"></span> 修改</a>

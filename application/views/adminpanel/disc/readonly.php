@@ -27,6 +27,13 @@
 					<?php echo isset($data_info['disc_game'])?$data_info['disc_game']:'' ?>
 				</div>
 			</div>
+	  	
+	<div class="form-group">
+				<label for="disc_status" class="col-sm-2 control-label form-control-static">光盘状态</label>
+				<div class="col-sm-9 form-control-static ">
+					<?php echo isset($data_info['disc_status'])?$data_info['disc_status']:'' ?>
+				</div>
+			</div>
 	    </fieldset>
 	</div>
 </div>

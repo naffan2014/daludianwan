@@ -25,6 +25,7 @@ class Disc extends Admin_Controller {
         //保证排序安全性
         $this->method_config['sort_field'] = array(
 										'disc_no'=>'disc_no',
+										'disc_game'=>'disc_game',
 										);
 	}
     
@@ -59,14 +60,12 @@ class Disc extends Admin_Controller {
         if (isset($_GET['dosubmit'])) {
         	$where_arr = NULL;
 		        
-		        
+			$_arr['disc_status'] = isset($_GET["disc_status"])?trim(safe_replace($_GET["disc_status"])):'';
+        	if($_arr['disc_status']!="") $where_arr[] = "disc_status = '".$_arr['disc_status']."'";
+
+                
         
 		        
-        	
-        	$_arr['disc_no_1'] =isset($_GET['disc_no_1'])?intval($_GET['disc_no_1']):'';
-        	$_arr['disc_no_2'] =isset($_GET['disc_no_2'])?intval($_GET['disc_no_2']):'';
-            if($_arr['disc_no_1']!="") $where_arr[] = "(disc_no >= ".$_arr['disc_no_1'].")";
-        	if($_arr['disc_no_2']!="") $where_arr[] = "(disc_no <= ".$_arr['disc_no_2'].")";
         	if($where_arr)$where = implode(" and ",$where_arr);
         }
 
@@ -117,6 +116,7 @@ class Disc extends Admin_Controller {
 			}
 			$_arr['disc_game'] = isset($_POST["disc_game"])?trim(safe_replace($_POST["disc_game"])):exit(json_encode(array('status'=>false,'tips'=>'所属游戏不能为空')));
 			if($_arr['disc_game']=='')exit(json_encode(array('status'=>false,'tips'=>'所属游戏不能为空')));
+			$_arr['disc_status'] = isset($_POST["disc_status"])?trim(safe_replace($_POST["disc_status"])):'';
 			
             $new_id = $this->disc_model->insert($_arr);
             if($new_id)
@@ -192,6 +192,7 @@ class Disc extends Admin_Controller {
 			}
 			$_arr['disc_game'] = isset($_POST["disc_game"])?trim(safe_replace($_POST["disc_game"])):exit(json_encode(array('status'=>false,'tips'=>'所属游戏不能为空')));
 			if($_arr['disc_game']=='')exit(json_encode(array('status'=>false,'tips'=>'所属游戏不能为空')));
+			$_arr['disc_status'] = isset($_POST["disc_status"])?trim(safe_replace($_POST["disc_status"])):'';
 			
             $status = $this->disc_model->update($_arr,array('disc_id'=>$id));
             if($status)
@@ -225,6 +226,32 @@ class Disc extends Admin_Controller {
         $this->view('readonly',array('require_js'=>true,'data_info'=>$data_info));
     }
 
+    /**
+     *      * @return array
+     */
+    function DB_disc_list_window($controlId='',$page_no=0)
+    {
+    	$page_no = max(intval($page_no),1);
+        $orderby = 'disc_ID desc';
+        $keyword=safe_replace(trim($this->input->get('keyword')));
+
+		$where ="";
+		if (isset($_GET['dosubmit'])) {
+			if($keyword!="") $where = "concat(disc_no,disc_no,disc_game,disc_status) like '%{$keyword}%'";
+		}
+		
+        
+    	$data_list = $this->disc_model->listinfo($where,'disc_no,disc_no,disc_game,disc_status',$orderby , $page_no, $this->disc_model->page_size,'',$this->disc_model->page_size,page_list_url('adminpanel/disc/DB_disc_list_window',true));
+        if($data_list)
+        {
+            	foreach($data_list as $k=>$v)
+            	{
+					$data_list[$k]['disc_game'] = $this->Game_model->DB_game_list_value($data_list[$k]["disc_game"]);    
+    			}
+        }
+    	$this->view('choose',array('require_js'=>true,'hidden_menu'=>true,'fields_convert'=>explode(",",'disc_game'),'fields'=>explode(",",'disc_no,disc_no,disc_game,disc_status'),'fields_caption'=>explode(",",'光盘序号,光盘序号,所属游戏,光盘状态'),'data_list'=>$data_list,'pages'=>$this->disc_model->pages,'control_id'=>$controlId,'keyword'=>$keyword,'concat_char'=>''));
+      
+    }
 }
 
 // END disc class

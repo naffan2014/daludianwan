@@ -26,10 +26,11 @@
 				var v = $(this).val();
 				if(confirm('确定要删除吗?'))
 				{
-					window.location.href= SITE_URL+ "adminpanel/disc/delete_one/"+v;
+					window.location.href= SITE_URL+ "adminpanel/record/delete_one/"+v;
 				}
 			});
             
+		$(".datepicker").datepicker();
             $('#validateform').bootstrapValidator({
 				message: '输入框不能为空',
 				feedbackIcons: {
@@ -38,24 +39,31 @@
 					validating: 'glyphicon glyphicon-refresh'
 				},
 				fields: {
-					 disc_no: {
+					 record_user_no: {
 						 validators: {
 							notEmpty: {
-								message: '光盘序号不符合要求'
+								message: '用户不符合要求'
 							}
 						 }
 					 },
-					 disc_game: {
+					 record_disc: {
 						 validators: {
 							notEmpty: {
-								message: '所属游戏不符合要求'
+								message: '游戏盘不符合要求'
 							}
 						 }
 					 },
-					 disc_status: {
+					 record_status: {
 						 validators: {
 							notEmpty: {
-								message: '光盘状态不符合要求'
+								message: '状态不符合要求'
+							}
+						 }
+					 },
+					 record_time: {
+						 validators: {
+							notEmpty: {
+								message: '操作时间不符合要求'
 							}
 						 }
 					 },
@@ -68,14 +76,14 @@
 				$.scojs_message("正在保存，请稍等...", $.scojs_message.TYPE_ERROR);
 				$.ajax({
 					type: "POST",
-					url: edit?SITE_URL+"adminpanel/disc/edit/"+id:SITE_URL+"adminpanel/disc/add/",
+					url: edit?SITE_URL+"adminpanel/record/edit/"+id:SITE_URL+"adminpanel/record/add/",
 					data:  $("#validateform").serialize(),
 					success:function(response){
 						var dataObj=jQuery.parseJSON(response);
 						if(dataObj.status)
 						{
 							$.scojs_message('操作成功,3秒后将返回列表页...', $.scojs_message.TYPE_OK);
-							aci.GoUrl(SITE_URL+'adminpanel/disc/',1);
+							aci.GoUrl(SITE_URL+'adminpanel/record/',1);
 						}else
 						{
 							$.scojs_message(dataObj.tips, $.scojs_message.TYPE_ERROR);
