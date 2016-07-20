@@ -70,6 +70,28 @@ PRIMARY KEY (`game_id`)
 ");
     }
     
+        
+    /**
+     * 游戏列表     * @return array
+     */
+    function DB_game_list_datasource($where='',$limit = '', $order = '', $group = '', $key='')
+    {
+    	$datalist = $this->select($where,'game_id,game_name,game_id,game_merchant',$limit,$order,$group,$key);
+        return $datalist;
+    }
+    
+    /**
+     * 游戏列表选择中项值     * @return array
+     */
+    function DB_game_list_value($id=0)
+    {
+    	$data_info = $this->get_one(array('game_id'=>$id),'game_name');
+        if($data_info)
+        {
+        	return  implode("-",$data_info);
+        }
+        return NULL;
+    }
         }
 
 // END game_model class

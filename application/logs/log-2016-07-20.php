@@ -37,3 +37,24 @@ ERROR - 2016-07-20 15:36:54 --> 404 Page Not Found: adminpanel/Game/db_game_list
 ERROR - 2016-07-20 15:37:16 --> Severity: Notice --> Undefined variable: check_result /usr/local/var/www/nginxRoot/com.project/daludianwan/application/views/adminpanel/moduleInstall/setup_error.php 16
 ERROR - 2016-07-20 15:37:31 --> 404 Page Not Found: adminpanel/Game/db_game_list_window
 ERROR - 2016-07-20 15:37:31 --> 404 Page Not Found: adminpanel/Game/db_game_list_window
+ERROR - 2016-07-20 15:41:49 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 293
+ERROR - 2016-07-20 15:41:49 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 293
+ERROR - 2016-07-20 15:41:49 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 293
+ERROR - 2016-07-20 15:41:49 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 293
+ERROR - 2016-07-20 15:42:19 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 293
+ERROR - 2016-07-20 15:42:19 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 293
+ERROR - 2016-07-20 15:42:19 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 293
+ERROR - 2016-07-20 15:42:19 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 293
+ERROR - 2016-07-20 15:44:01 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:44:01 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:45:53 --> Severity: Warning --> chmod(): Operation not permitted /usr/local/var/www/nginxRoot/com.project/daludianwan/system/libraries/Cache/drivers/Cache_file.php 106
+ERROR - 2016-07-20 15:45:53 --> Severity: Warning --> chmod(): Operation not permitted /usr/local/var/www/nginxRoot/com.project/daludianwan/system/libraries/Cache/drivers/Cache_file.php 106
+ERROR - 2016-07-20 15:45:53 --> Severity: Warning --> chmod(): Operation not permitted /usr/local/var/www/nginxRoot/com.project/daludianwan/system/libraries/Cache/drivers/Cache_file.php 106
+ERROR - 2016-07-20 15:45:57 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:45:57 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:45:57 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:45:57 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:47:25 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:47:25 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:47:25 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
+ERROR - 2016-07-20 15:47:25 --> Severity: Notice --> Undefined index: game_merchant /usr/local/var/www/nginxRoot/com.project/daludianwan/application/controllers/adminpanel/Game.php 294
