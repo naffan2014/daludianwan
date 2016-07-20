@@ -269,6 +269,32 @@ class Game extends Admin_Controller {
         $this->view('readonly',array('require_js'=>true,'data_info'=>$data_info));
     }
 
+    /**
+     *      * @return array
+     */
+    function DB_game_list_window($controlId='',$page_no=0)
+    {
+    	$page_no = max(intval($page_no),1);
+        $orderby = 'game_ID desc';
+        $keyword=safe_replace(trim($this->input->get('keyword')));
+
+		$where ="";
+		if (isset($_GET['dosubmit'])) {
+			if($keyword!="") $where = "concat(game_id,game_name,game_id,game_merchant) like '%{$keyword}%'";
+		}
+		
+        
+    	$data_list = $this->game_model->listinfo($where,'game_id,game_name,game_id,game_merchant',$orderby , $page_no, $this->game_model->page_size,'',$this->game_model->page_size,page_list_url('adminpanel/game/DB_game_list_window',true));
+        if($data_list)
+        {
+            	foreach($data_list as $k=>$v)
+            	{
+					$data_list[$k]['game_merchant'] = $this->Merchant_model->DB_merchant_list_value($data_list[$k]["game_merchant"]);    
+    			}
+        }
+    	$this->view('choose',array('require_js'=>true,'hidden_menu'=>true,'fields_convert'=>explode(",",'game_name'),'fields'=>explode(",",'game_id,game_name,game_id,game_merchant'),'fields_caption'=>explode(",",'ID,游戏名称,ID,游戏厂商'),'data_list'=>$data_list,'pages'=>$this->game_model->pages,'control_id'=>$controlId,'keyword'=>$keyword,'concat_char'=>''));
+      
+    }
 }
 
 // END game class
