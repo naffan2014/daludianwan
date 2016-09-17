@@ -37,7 +37,7 @@ define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 define('HTTP_REFERER', isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '');
-define('SITE_URL', '/');#初始安装，请在这里修改,为实际目录
+define('SITE_URL', '/daludianwan/');#初始安装，请在这里修改,为实际目录
 define('SKIN_PATH', SITE_URL.'css/');
 define('SYS_STYLE',  'default');
 define('EXT',  '.php');
