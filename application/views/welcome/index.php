@@ -5,7 +5,7 @@
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
+		<!--
           <div class="masthead clearfix">
             <div class="inner">
               <h3 class="masthead-brand">ACI(AutoCodeigniter.com)</h3>
@@ -17,9 +17,9 @@
               </nav>
             </div>
           </div>
-
+        -->
           <div class="inner cover">
-            <h1 class="cover-heading">欢迎使用ACI. <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=bad0214202bb89e4118c272a39b4cc81abf6bbae0ec7f46d68e5d4f06448cbda"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="ACI" title="ACI"></a></h1>
+            <h1 class="cover-heading">欢迎进入大陆电子电玩</h1>
             <?php  if (version_compare(PHP_VERSION, '5.3.0') <= 0) :?>
             <p class="lead">很抱歉 ACI 要求最低PHP版本不能小于PHP 5.3</p>
             <?php else:?>
@@ -30,10 +30,9 @@
               <?php elseif($cache_chomd<755):?>
                 <p class="lead"> application/cache 文件夹 权限不够，要求权限>=755以上 </p>
               <?php else:?>
-                <p class="lead">恭喜您安装成功，默认管理帐号 test/test</p>
                 <p class="lead">
                   <p>{title}</p>
-                  <p>感谢@Alex 、 @青蛙 、 @zhanxing.tech </p>
+                  <p>这个页面可以做首页</p>
 
                   <a href="<?php echo site_url('adminpanel')?>" class="btn btn-lg btn-default">进入后台管理</a>
                 </p>
