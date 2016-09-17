@@ -55,8 +55,8 @@ define('INTALL_UPLOAD_TEMP_PATH',''.FCPATH.'/uploadfile/temp/install');
 
 define('SYS_TIME', time());
 
-define('SITE_NAME','ACI-WEB管理系统 ');
-define('WEBSITE_BASE_NAME','ACI-WEB管理系统');
+define('SITE_NAME','大陆电子电玩');
+define('WEBSITE_BASE_NAME','大陆电子电玩');
 
 
 define('SUPERADMIN_GROUP_ID',  1);
@@ -68,7 +68,6 @@ define('SETUP_BACKUP_OVERWRITE_FILES', FALSE);#是否备份存在的模块文件
 define('ADMIN_URL_PATH',  SITE_URL.'adminpanel/');
 define('ADMIN_CSS_PATH',  SITE_URL.'css/adminpanel/');
 define('ADMIN_IMG_PATH', SITE_URL.'images/adminpanel/');
-
 
 
 /* End of file constants.php */

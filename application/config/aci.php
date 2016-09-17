@@ -4,7 +4,7 @@ $config['aci_status'] = array (
   'installED' => true,
 );
 $config['aci_module'] = array (
-  'welcome' => 
+  'welcome' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -17,11 +17,11 @@ $config['aci_module'] = array (
     'works' => true,
     'moduleUrl' => '',
     'system' => true,
-    'coder' => '胡子锅',
+    'coder' => '张一帆',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => '',
         'controller' => 'welcome',
@@ -30,7 +30,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'adminpanel' => 
+  'adminpanel' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -43,53 +43,53 @@ $config['aci_module'] = array (
     'works' => true,
     'moduleUrl' => 'adminpanel/user',
     'system' => true,
-    'coder' => '胡子锅',
+    'coder' => '张一帆',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'manage',
         'method' => 'index',
         'caption' => '管理中心-首页',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'manage',
         'method' => 'login',
         'caption' => '管理中心-登录',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'manage',
         'method' => 'logout',
         'caption' => '管理中心-注销',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'profile',
         'method' => 'change_pwd',
         'caption' => '管理中心-修改密码',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'manage',
         'method' => 'login',
         'caption' => '管理中心-登录',
       ),
-      5 => 
+      5 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'manage',
         'method' => 'go',
         'caption' => '管理中心-URL转向',
       ),
-      6 => 
+      6 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'manage',
@@ -98,7 +98,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'user' => 
+  'user' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -113,100 +113,100 @@ $config['aci_module'] = array (
     'system' => true,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'user',
         'method' => 'index',
         'caption' => '用户管理-列表',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'user',
         'method' => 'check_username',
         'caption' => '用户管理-检测用户名',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'user',
         'method' => 'delete',
         'caption' => '用户管理-删除',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'user',
         'method' => 'lock',
         'caption' => '用户管理-锁定',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'user',
         'method' => 'edit',
         'caption' => '用户管理-编辑',
       ),
-      5 => 
+      5 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'user',
         'method' => 'add',
         'caption' => '用户管理-新增',
       ),
-      6 => 
+      6 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'user',
         'method' => 'upload',
         'caption' => '用户管理-上传图像',
       ),
-      7 => 
+      7 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'role',
         'method' => 'index',
         'caption' => '用户组管理-列表',
       ),
-      8 => 
+      8 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'role',
         'method' => 'setting',
         'caption' => '用户组管理-权限设置',
       ),
-      9 => 
+      9 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'role',
         'method' => 'add',
         'caption' => '用户组管理-新增',
       ),
-      10 => 
+      10 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'role',
         'method' => 'edit',
         'caption' => '用户组管理-编辑',
       ),
-      11 => 
+      11 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'role',
         'method' => 'delete_one',
         'caption' => '用户组管理-删除',
       ),
-      12 => 
+      12 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'user',
         'method' => 'user_window',
         'caption' => '用户-弹窗',
       ),
-      13 => 
+      13 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'role',
@@ -215,7 +215,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'moduleMenu' => 
+  'moduleMenu' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -230,37 +230,37 @@ $config['aci_module'] = array (
     'system' => true,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleMenu',
         'method' => 'index',
         'caption' => '菜单管理-列表',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleMenu',
         'method' => 'add',
         'caption' => '菜单管理-新增',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleMenu',
         'method' => 'edit',
         'caption' => '菜单管理-编辑',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleMenu',
         'method' => 'delete',
         'caption' => '菜单管理-删除',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleMenu',
@@ -269,7 +269,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'moduleManage' => 
+  'moduleManage' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -284,51 +284,51 @@ $config['aci_module'] = array (
     'system' => true,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleManage',
         'method' => 'index',
         'caption' => '模块管理',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleInstall',
         'method' => 'index',
         'caption' => '模块管理-开始',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleInstall',
         'method' => 'check',
         'caption' => '模块管理-检查',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleInstall',
         'method' => 'setup',
         'caption' => '模块管理-安装',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleInstall',
         'method' => 'uninstall',
         'caption' => '模块管理-卸载',
       ),
-      5 => 
+      5 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleInstall',
         'method' => 'reinstall',
         'caption' => '模块管理-重新安装',
       ),
-      6 => 
+      6 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'moduleInstall',
@@ -337,7 +337,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'merchant' => 
+  'merchant' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -346,7 +346,7 @@ $config['aci_module'] = array (
     'modulePath' => 'adminpanel',
     'moduleCaption' => '厂商管理',
     'description' => '由autoCodeigniter 自动生成的模块',
-    'fileList' => 
+    'fileList' =>
     array (
       0 => 'application/views/adminpanel/merchant/edit.php',
       1 => 'scripts/adminpanel/merchant/edit.js',
@@ -362,9 +362,9 @@ $config['aci_module'] = array (
     'system' => false,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -372,7 +372,7 @@ $config['aci_module'] = array (
         'menu_name' => '管理厂商管理',
         'caption' => '管理厂商管理',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -380,7 +380,7 @@ $config['aci_module'] = array (
         'menu_name' => '厂商管理列表',
         'caption' => '厂商管理列表',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -388,7 +388,7 @@ $config['aci_module'] = array (
         'menu_name' => '新增',
         'caption' => '新增',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -396,7 +396,7 @@ $config['aci_module'] = array (
         'menu_name' => '修改',
         'caption' => '修改',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -404,7 +404,7 @@ $config['aci_module'] = array (
         'menu_name' => '选择弹窗',
         'caption' => '选择弹窗',
       ),
-      5 => 
+      5 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -412,7 +412,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除单个',
         'caption' => '删除单个',
       ),
-      6 => 
+      6 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -420,7 +420,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除多个',
         'caption' => '删除多个',
       ),
-      7 => 
+      7 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -428,7 +428,7 @@ $config['aci_module'] = array (
         'menu_name' => '查看',
         'caption' => '查看',
       ),
-      8 => 
+      8 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -436,7 +436,7 @@ $config['aci_module'] = array (
         'menu_name' => '上传',
         'caption' => '上传',
       ),
-      9 => 
+      9 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'merchant',
@@ -446,7 +446,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'type' => 
+  'type' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -455,7 +455,7 @@ $config['aci_module'] = array (
     'modulePath' => 'adminpanel',
     'moduleCaption' => '游戏风格管理',
     'description' => '由autoCodeigniter 自动生成的模块',
-    'fileList' => 
+    'fileList' =>
     array (
       0 => 'application/views/adminpanel/type/edit.php',
       1 => 'scripts/adminpanel/type/edit.js',
@@ -471,9 +471,9 @@ $config['aci_module'] = array (
     'system' => false,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -481,7 +481,7 @@ $config['aci_module'] = array (
         'menu_name' => '管理游戏风格管理',
         'caption' => '管理游戏风格管理',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -489,7 +489,7 @@ $config['aci_module'] = array (
         'menu_name' => '游戏风格管理列表',
         'caption' => '游戏风格管理列表',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -497,7 +497,7 @@ $config['aci_module'] = array (
         'menu_name' => '新增',
         'caption' => '新增',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -505,7 +505,7 @@ $config['aci_module'] = array (
         'menu_name' => '修改',
         'caption' => '修改',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -513,7 +513,7 @@ $config['aci_module'] = array (
         'menu_name' => '选择弹窗',
         'caption' => '选择弹窗',
       ),
-      5 => 
+      5 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -521,7 +521,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除单个',
         'caption' => '删除单个',
       ),
-      6 => 
+      6 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -529,7 +529,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除多个',
         'caption' => '删除多个',
       ),
-      7 => 
+      7 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -537,7 +537,7 @@ $config['aci_module'] = array (
         'menu_name' => '查看',
         'caption' => '查看',
       ),
-      8 => 
+      8 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -545,7 +545,7 @@ $config['aci_module'] = array (
         'menu_name' => '上传',
         'caption' => '上传',
       ),
-      9 => 
+      9 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'type',
@@ -555,7 +555,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'game' => 
+  'game' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -564,7 +564,7 @@ $config['aci_module'] = array (
     'modulePath' => 'adminpanel',
     'moduleCaption' => '游戏管理',
     'description' => '由autoCodeigniter 自动生成的模块',
-    'fileList' => 
+    'fileList' =>
     array (
       0 => 'application/views/adminpanel/game/edit.php',
       1 => 'scripts/adminpanel/game/edit.js',
@@ -580,9 +580,9 @@ $config['aci_module'] = array (
     'system' => false,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -590,7 +590,7 @@ $config['aci_module'] = array (
         'menu_name' => '管理游戏管理',
         'caption' => '管理游戏管理',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -598,7 +598,7 @@ $config['aci_module'] = array (
         'menu_name' => '游戏管理列表',
         'caption' => '游戏管理列表',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -606,7 +606,7 @@ $config['aci_module'] = array (
         'menu_name' => '新增',
         'caption' => '新增',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -614,7 +614,7 @@ $config['aci_module'] = array (
         'menu_name' => '修改',
         'caption' => '修改',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -622,7 +622,7 @@ $config['aci_module'] = array (
         'menu_name' => '选择弹窗',
         'caption' => '选择弹窗',
       ),
-      5 => 
+      5 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -630,7 +630,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除单个',
         'caption' => '删除单个',
       ),
-      6 => 
+      6 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -638,7 +638,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除多个',
         'caption' => '删除多个',
       ),
-      7 => 
+      7 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -646,7 +646,7 @@ $config['aci_module'] = array (
         'menu_name' => '查看',
         'caption' => '查看',
       ),
-      8 => 
+      8 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -654,7 +654,7 @@ $config['aci_module'] = array (
         'menu_name' => '上传',
         'caption' => '上传',
       ),
-      9 => 
+      9 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'game',
@@ -664,7 +664,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'disc' => 
+  'disc' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -673,7 +673,7 @@ $config['aci_module'] = array (
     'modulePath' => 'adminpanel',
     'moduleCaption' => '游戏盘管理',
     'description' => '由autoCodeigniter 自动生成的模块',
-    'fileList' => 
+    'fileList' =>
     array (
       0 => 'application/views/adminpanel/disc/edit.php',
       1 => 'scripts/adminpanel/disc/edit.js',
@@ -689,9 +689,9 @@ $config['aci_module'] = array (
     'system' => false,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -699,7 +699,7 @@ $config['aci_module'] = array (
         'menu_name' => '管理游戏盘管理',
         'caption' => '管理游戏盘管理',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -707,7 +707,7 @@ $config['aci_module'] = array (
         'menu_name' => '游戏盘管理列表',
         'caption' => '游戏盘管理列表',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -715,7 +715,7 @@ $config['aci_module'] = array (
         'menu_name' => '新增',
         'caption' => '新增',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -723,7 +723,7 @@ $config['aci_module'] = array (
         'menu_name' => '修改',
         'caption' => '修改',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -731,7 +731,7 @@ $config['aci_module'] = array (
         'menu_name' => '选择弹窗',
         'caption' => '选择弹窗',
       ),
-      5 => 
+      5 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -739,7 +739,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除单个',
         'caption' => '删除单个',
       ),
-      6 => 
+      6 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -747,7 +747,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除多个',
         'caption' => '删除多个',
       ),
-      7 => 
+      7 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -755,7 +755,7 @@ $config['aci_module'] = array (
         'menu_name' => '查看',
         'caption' => '查看',
       ),
-      8 => 
+      8 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -763,7 +763,7 @@ $config['aci_module'] = array (
         'menu_name' => '上传',
         'caption' => '上传',
       ),
-      9 => 
+      9 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'disc',
@@ -773,7 +773,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'record' => 
+  'record' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -782,7 +782,7 @@ $config['aci_module'] = array (
     'modulePath' => 'adminpanel',
     'moduleCaption' => '租赁管理',
     'description' => '由autoCodeigniter 自动生成的模块',
-    'fileList' => 
+    'fileList' =>
     array (
       0 => 'application/views/adminpanel/record/edit.php',
       1 => 'scripts/adminpanel/record/edit.js',
@@ -798,9 +798,9 @@ $config['aci_module'] = array (
     'system' => false,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -808,7 +808,7 @@ $config['aci_module'] = array (
         'menu_name' => '管理租赁管理',
         'caption' => '管理租赁管理',
       ),
-      1 => 
+      1 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -816,7 +816,7 @@ $config['aci_module'] = array (
         'menu_name' => '租赁管理列表',
         'caption' => '租赁管理列表',
       ),
-      2 => 
+      2 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -824,7 +824,7 @@ $config['aci_module'] = array (
         'menu_name' => '新增',
         'caption' => '新增',
       ),
-      3 => 
+      3 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -832,7 +832,7 @@ $config['aci_module'] = array (
         'menu_name' => '修改',
         'caption' => '修改',
       ),
-      4 => 
+      4 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -840,7 +840,7 @@ $config['aci_module'] = array (
         'menu_name' => '选择弹窗',
         'caption' => '选择弹窗',
       ),
-      5 => 
+      5 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -848,7 +848,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除单个',
         'caption' => '删除单个',
       ),
-      6 => 
+      6 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -856,7 +856,7 @@ $config['aci_module'] = array (
         'menu_name' => '删除多个',
         'caption' => '删除多个',
       ),
-      7 => 
+      7 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -864,7 +864,7 @@ $config['aci_module'] = array (
         'menu_name' => '查看',
         'caption' => '查看',
       ),
-      8 => 
+      8 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'record',
@@ -874,7 +874,7 @@ $config['aci_module'] = array (
       ),
     ),
   ),
-  'helloWorld' => 
+  'helloWorld' =>
   array (
     'version' => '1',
     'charset' => 'utf-8',
@@ -889,9 +889,9 @@ $config['aci_module'] = array (
     'system' => false,
     'coder' => '胡子锅',
     'website' => 'http://',
-    'moduleDetails' => 
+    'moduleDetails' =>
     array (
-      0 => 
+      0 =>
       array (
         'folder' => 'adminpanel',
         'controller' => 'helloWorld',

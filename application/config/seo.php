@@ -1,8 +1,8 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$config['seo']['default']['title']= 'ACI —— 开源PHP后台管理系统';
-$config['seo']['default']['keywords']= '自带后台管理，用户管理、用户组管理、权限管理、菜单管理、模块管理、扩展管理基本功能，适合于所有程序的基本需求,由此可以扩展出各类实用应用...';
-$config['seo']['default']['decriptions']= ' 基于PHP Codeigniter 开源框架功能扩展 ';
+$config['seo']['default']['title']= '大陆电子电玩';
+$config['seo']['default']['keywords']= 'ps4,ps3,psv,3ds,xbox,xbox one,游戏，出租，租赁';
+$config['seo']['default']['decriptions']= '我还没写这块，得和老板商量下';
 
 /* End of file seo.php */
 /* Location: ./application/config/seo.php */
