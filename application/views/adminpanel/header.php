@@ -6,13 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="robots" content="noindex,nofollow" />
 <title><?php echo SITE_NAME?></title>
-<link href="<?php echo base_url('css/bootstrap.min.css')?>" rel="stylesheet">
-<link type="text/css" href="<?php echo base_url('css/font-awesome.min.css')?>" rel="stylesheet" />
-<link type="text/css" href="<?php echo base_url('css/jquery.dataTables.min.css')?>" rel="stylesheet" />
+<link href="<?php echo base_url('/css/bootstrap.min.css')?>" rel="stylesheet">
+<link type="text/css" href="<?php echo base_url('/css/font-awesome.min.css')?>" rel="stylesheet" />
+<link type="text/css" href="<?php echo base_url('/css/jquery.dataTables.min.css')?>" rel="stylesheet" />
 <!--[if IE 7]>
-<link rel="stylesheet" href="<?php echo base_url('css/font-awesome-ie7.min.css')?>">
+<link rel="stylesheet" href="<?php echo base_url('/css/font-awesome-ie7.min.css')?>">
 <![endif]-->
-<link type="text/css" href="<?php echo base_url('css/jquery-ui-1.10.0.custom.css')?>" rel="stylesheet" />
+<link type="text/css" href="<?php echo base_url('/css/jquery-ui-1.10.0.custom.css')?>" rel="stylesheet" />
 <link rel="stylesheet" href="<?php echo ADMIN_CSS_PATH.'style.css'?>">
 <?php if(isset($require_js)):?>
 <script language="javascript" type="text/javascript"> var SITE_URL = "<?php echo SITE_URL?>";</script>
